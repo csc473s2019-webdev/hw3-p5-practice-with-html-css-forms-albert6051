@@ -5,42 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <style>
+        div {
+            background-color: gray;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px;
+            width: 75%;
+            max-width: 900px;
+            padding: 10px;
+            padding-top: 20px;
+        }
+        .input-field {
+            height: 20px;
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="title">
-        Survey
-    </h1>
-    <p id="description">
-        This is survey form done for CSc47300 class
-    </p>
-    <form action="" id="survey-form">
-        <label for="" id="name-label">*Name:</label>
-        <input type="text" id="name" placeholder="Enter your name"><br>
-        <label for="" id="email-label">*Email Address:</label>
-        <input type="email" name="" id="email" placeholder="Enter email address"><br>
-        <label for="" id="number-label">*Age:</label>
-        <input type="number" name="" id="number" min="1" max="100" placeholder="Age"><br>
-        <label for="" id="dropdown-label">What is your education level? </label>
-        <select name="" id="dropdown">
-            <option value="1">Middle School</option>
-            <option value="2">High School</option>
-            <option value="3">College</option>
-            <option value="4">Graduate School</option>
-        </select>
-        <br><label for="gender-label">What is your gender? </label><br>
-        <input type="radio" name="gender" value="male" checked> Male <br>
-        <input type="radio" name="gender" value="female" > Female <br>
-        <input type="radio" name="gender" value="other" > Other <br>
-        <label for="class-label">What you have taken? </label> <br>
-        <input type="checkbox" name="class1" value="CSC103"> CSC10300<br>
-        <input type="checkbox" name="class2" value="CSC104"> CSC10400<br>
-        <input type="checkbox" name="class3" value="CSC201"> CSC20100<br>
-        <input type="checkbox" name="class4" value="CSC203"> CSC20300<br>
-        <input type="checkbox" name="class5" value="CSC270"> CSC27000<br>
-        <input type="checkbox" name="class6" value="CSC273"> CSC27300<br>
-        <label for="comment-label">Any Comments or Suggestions? </label> <br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comments here..."></textarea><br>
-        <input type="button" id="submit" value="Submit">
-    </form>
+    <div>
+        <h1 id="title">
+            Survey
+        </h1>
+        <p id="description">
+            This is survey form done for CSc47300 class
+        </p>
+        <form action="" id="survey-form">
+            <label for="" id="name-label">*Name:</label>
+            <input type="text" class= "input-field" id="name" placeholder="Enter your name"><br>
+            <label for="" id="email-label">*Email Address:</label>
+            <input type="email" class= "input-field" name="" id="email" placeholder="Enter email address"><br>
+            <label for="" id="number-label">*Age:</label>
+            <input type="number" class= "input-field" name="" id="number" min="1" max="100" placeholder="Age"><br>
+            <label for="" id="dropdown-label">What is your education level? </label>
+            <select name="" id="dropdown">
+                <option value="1">Middle School</option>
+                <option value="2">High School</option>
+                <option value="3">College</option>
+                <option value="4">Graduate School</option>
+            </select>
+            <br><label for="gender-label">What is your gender? </label><br>
+            <input type="radio" name="gender" value="male" checked> Male <br>
+            <input type="radio" name="gender" value="female" > Female <br>
+            <input type="radio" name="gender" value="other" > Other <br>
+            <label for="class-label">What you have taken? </label> <br>
+            <input type="checkbox" name="class1" value="CSC103"> CSC10300<br>
+            <input type="checkbox" name="class2" value="CSC104"> CSC10400<br>
+            <input type="checkbox" name="class3" value="CSC201"> CSC20100<br>
+            <input type="checkbox" name="class4" value="CSC203"> CSC20300<br>
+            <input type="checkbox" name="class5" value="CSC270"> CSC27000<br>
+            <input type="checkbox" name="class6" value="CSC273"> CSC27300<br>
+            <label for="comment-label">Any Comments or Suggestions? </label> <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comments here..."></textarea><br>
+            <input type="button" id="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
