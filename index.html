@@ -34,6 +34,14 @@
             width: 40%;
             vertical-align: middle;
         }
+        #submit {
+            border-radius: 4px;
+            font-size: 1em;
+            height: 40px;
+            width: 96px;
+            margin: 10px;
+            border: 0px solid;
+        }
     </style>
 </head>
 <body>
@@ -96,8 +104,13 @@
                 <input type="checkbox" name="class6" value="CSC273"> CSC27300<br>
             </div>
             <br>
-            <label for="comment-label">Any Comments or Suggestions? </label> <br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comments here..."></textarea><br>
+            <div class="left">
+                <label for="comment-label">Any Comments or Suggestions? </label> <br>
+            </div>
+            <div class="right">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <br>
             <input type="button" id="submit" value="Submit">
         </form>
     </div>
